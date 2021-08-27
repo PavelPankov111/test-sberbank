@@ -1,0 +1,38 @@
+.successfulForm{
+    position: fixed;
+    top: 30vh;
+    left: 32vw;
+    right: 32vw;
+    visibility: hidden;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    max-width: 500px;
+    transform: translateY(-1000%);
+    transition: transform 1s ease;
+    animation: 1s spin infinite linear;
+    z-index: 5;
+
+    &_opened{
+        transform: translateY(-50%);
+        visibility: visible;
+    }
+
+    &__image{
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+    }
+
+    &__text{
+        color: #000;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 25px;
+        white-space: normal;
+        width: 457px;
+        text-align: center;
+    }
+}

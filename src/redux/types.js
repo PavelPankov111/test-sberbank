@@ -1,0 +1,14 @@
+export const SEND_REQUEST = "SEND_REQUEST";
+export const SET_RESPONSE = "SET_RESPONSE";
+export const SERVER_ERROR = "SERVER_ERROR";
+export const GLOBAL_ERROR = "GLOBAL_ERROR";
+export const NAME_ERROR = "NAME_ERROR";
+export const EMAIL_ERROR = "EMAIL_ERROR";
+export const GLOBAL_ERROR_ON = "GLOBAL_ERROR_ON";
+export const GLOBAL_ERROR_OFF = "GLOBAL_ERROR_OFF";
+export const NAME_ERROR_ON = "NAME_ERROR_ON";
+export const NAME_ERROR_OFF = "NAME_ERROR_OFF";
+export const EMAIL_ERROR_ON = "EMAIL_ERROR_ON";
+export const EMAIL_ERROR_OFF = "EMAIL_ERROR_OFF";
+export const SERVER_ERROR_ON = "SERVER_ERROR_ON";
+export const SERVER_ERROR_OFF = "SERVER_ERROR_OFF";
