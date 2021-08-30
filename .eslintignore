@@ -1,3 +1,4 @@
 dist
 config
-Form.spec.js
+validationReducer.test.js
+appReducer.test.js
