@@ -1,12 +1,7 @@
 import React from "react";
 import "./SuccessfulForm.scss";
 
-export const SuccessfulForm = ({
-  image,
-  title,
-  description,
-  status = true,
-}) => (
+export const SuccessfulForm = ({ image, title, description, status }) => (
   <div
     className={
       status ? "successfulForm successfulForm_opened" : "successfulForm"

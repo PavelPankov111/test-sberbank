@@ -7,9 +7,6 @@ import configureMockStore from 'redux-mock-store'
 import thunk from 'redux-thunk'
 import fetchMock from 'fetch-mock'
 import { SEND_REQUEST, SET_RESPONSE } from '../types';
-import { render } from '@testing-library/react'
-import { SuccessfulForm } from '../../components/SuccessfulForm/SuccessfulForm'
-import React from 'react'
 
 describe('testing app reducer', () => {
 
@@ -37,14 +34,9 @@ describe('testing app reducer', () => {
                 },
             ]
 
-            return store.dispatch(sendRequest({ })).then(() => {
+            return store.dispatch(sendRequest({})).then(() => {
                 expect(store.getActions()).toEqual(expectedActions)
             })
-        })
-
-        it('testing render sucsessfful page', () => {
-            const { container } = render(<SuccessfulForm />)
-            expect(container.getElementsByClassName('successfulForm_opened').length).toBe(1)
         })
     })
 

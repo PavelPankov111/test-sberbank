@@ -89,6 +89,7 @@ export function serverError(payload) {
 export function sendRequest(data) {
   return async (dispatch) => {
     window.console.log(data);
+
     dispatch({ type: SEND_REQUEST });
 
     try {
