@@ -41,4 +41,16 @@ describe("testing validationReducer", () => {
         expect(reducer(emailErrorOff()).emailErrorStatus).toBeFalsy()
     })
 
+    it('should return the initial state', () => {
+        const initState = {
+            globalError: "",
+            globalStatus: false,
+            nameError: "",
+            nameErrorStatus: false,
+            emailError: "",
+            emailErrorStatus: false,
+        };
+
+        expect(validationReducer(undefined, { })).toEqual(initState)
+    })
 });
