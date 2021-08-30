@@ -7,7 +7,7 @@
 2) Redux, react-reudux, redux-thunk
 3) Webpack, babel, postCss
 4) Scss
-5) Тесты: jest, enzyme
+5) Тесты: jest, @testing-library/react
 6) Линтер: eslint
 ```
 
